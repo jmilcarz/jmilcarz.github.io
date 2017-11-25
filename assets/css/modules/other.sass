@@ -1,0 +1,296 @@
+div.col-xl-3#profileinfo
+     div.card
+          margin-bottom: 15px
+          div.card-body
+               padding: 0
+               .buttons
+                    @media screen and (max-width: 1200px)
+                         display: none
+
+                    margin-top: 5px
+                    margin-bottom: 5px
+                    overflow-x: scroll
+                    white-space: nowrap
+                    width: auto
+
+                    a.btn
+                         color: $swines1
+                         text-decoration: none
+
+               .profile-pictures
+                    display: block
+                    height: 180px
+                    &:hover
+                         text-decoration: none
+                    @media screen and (max-width: 1200px)
+                         height: 280px
+                    img.bg
+                         height: 100%
+                         width: 100%
+                         display: block
+                         margin: 0 auto
+                         object-fit: cover
+
+                    .info
+                         position: relative
+                         top: -180px
+                         display: flex
+                         flex-direction: column
+                         align-items: center
+                         justify-content: center
+                         box-sizing: border-box
+                         background: rgba($swines1, 0.2)
+                         height: 100%
+                         @media screen and (max-width: 1200px)
+                              top: -280px
+
+                         img.profile
+                              height: 95px
+                              width: 95px
+                              border-radius: 50%
+                              object-fit: cover
+                              border: 2px solid $swines8
+                              @media screen and (max-width: 1200px)
+                                   height: 140px
+                                   width: 140px
+                                   border: 3px solid $swines8
+
+                         .name
+                              width: 100%
+                              box-sizing: border-box
+                              height: 30px
+                              padding: 7px 0
+                              @media screen and (max-width: 1200px)
+                                   height: auto
+                              h1
+                                   margin: 0
+                                   font-weight: 300
+                                   font-size: 22px
+                                   filter: drop-shadow(0px 0px 4px $swines7)
+                                   color: $swines3
+                                   text-align: center
+                                   @media screen and (min-width: 1200px)
+                                        br
+                                             display: none
+                                   @media screen and (max-width: 1200px)
+                                        font-size: 28px
+
+               section
+                    > .add-friend-button
+                         text-align: center
+                         margin-top: 15px
+                         @media screen and (max-width: 1200px)
+                              margin-bottom: 15px
+                         @media screen and (max-width: 1200px)
+                              display: none
+
+
+
+                    .bio
+                         @media screen and (min-width: 1200px)
+                              padding-bottom: 15px
+                              .buttons
+                                   display: none
+                              .add-friend-button
+                                   display: none
+                         @media screen and (max-width: 1200px)
+                              height: 65px
+                              align-items: center
+                              display: flex
+                              justify-content: space-around
+                              border-top: 0.5px solid $swines8
+                              border-bottom: 0.5px solid $swines8
+                              .buttons
+                                   display: block
+                              .add-friend-button
+                                   padding: 0 15px
+
+                         @media screen and (max-width: 820px)
+                              justify-content: space-between
+                         @media screen and (max-width: 700px)
+                              justify-content: space-between
+                         @media screen and (max-width: 700px)
+                              .buttons
+                                   display: none
+                         @media screen and (max-width: 450px)
+                              display: grid
+                              grid-template-rows: 55px auto
+
+                              height: auto
+                              padding-bottom: 15px
+                         p
+                              text-align: center
+                              color: $swines7
+                              font-size: 14px
+                              font-weight: 300
+                              margin: 15px 0
+                              padding: 8px 0
+                              border-top: 0.5px solid $swines8
+                              border-bottom: 0.5px solid $swines8
+                              @media screen and (max-width: 1200px)
+                                   border: none
+                         @media screen and (max-width: 1200px)
+                              p
+                                   display: none
+                         @media screen and (max-width: 450px)
+                              p
+                                   margin: 0
+                                   padding: 0
+                                   display: block
+                                   grid-row: 2/3
+
+                              .add-friend-button
+                                   grid-row: 1/2
+                                   text-align: center
+
+                         footer
+                              display: flex
+                              justify-content: center
+                              padding-top: 5px
+                              @media screen and (max-width: 450px)
+                                   display: none
+                              .column
+                                   display: flex
+                                   flex-direction: column
+                                   align-items: center
+                                   padding: 0 10px
+                                   &.border-next
+                                        border-right: 1px solid $swines8
+                                   h1
+                                        margin: 0
+                                        font-size: 16px
+                                        font-weight: 300
+                                   h2
+                                        margin: 0
+                                        margin-top: 3px
+                                        font-size: 16px
+
+               .buttons.secondbuttons
+                    @media screen and (max-width: 700px)
+                         display: block
+                         text-align: center
+
+
+div.col-md-8#timeline
+     ul.list-group
+          li.list-group-item
+               form
+                    textarea
+                         min-height: 80px
+                         max-height: 200px
+                    button
+                         background: $swines1
+                         &:hover
+                              cursor: pointer
+                              background: lighten($swines1, 5%)
+                              box-shadow: 0px 0px 0px $swines1
+               a.mediana
+                    display: block
+                    height: 100%
+                    color: $swines7
+                    &:hover
+                         text-decoration: none
+
+               div.media
+                    img
+                         height: 67px
+                         border-radius: 50%
+                    li.media-footer.list-group-item
+                         border: none
+                         height: 60px
+                         display: flex
+                         justify-content: space-around
+                         align-items: center
+                         max-width: 100%
+                         width: 100%
+                         @media screen and (max-width: 500px)
+                              max-width: calc(100% + 80px)
+                              width: 100%
+                              transform: translateX(-100px)
+
+                         a
+                              color: $swines7
+                              font-size: 17px
+                              &:hover
+                                   text-decoration: none
+                                   cursor: pointer
+                                   color: $swines1
+                    div.media-body
+                         @media screen and (max-width: 500px)
+                              width: 100%
+                         p.lead
+                              font-size: 16px
+                              @media screen and (max-width: 500px)
+                                   max-width: calc(100% + 80px)
+                                   width: 100%
+                                   transform: translateX(-80px)
+                                   margin-top: 10px
+                                   box-sizing: border-box
+                                   margin-right: 10px
+                                   word-wrap: normal
+
+               &.comments
+                    padding-left: 80px
+                    h1
+                         font-weight: 800
+                         margin: 15px 0 35px 0
+                    .media
+                         margin: 30px 0
+                         border-bottom: 1px solid $swines8
+
+div.col-md-8#albums > .card > .albums
+     padding: 15px
+     display: grid
+     grid-template-columns: repeat(3, 1fr)
+     grid-gap: 15px
+     @media screen and (max-width: 680px)
+          grid-template-columns: repeat(2, 1fr)
+     @media screen and (max-width: 440px)
+          grid-template-columns: 1fr
+     a
+          &:hover
+               cursor: pointer
+               text-decoration: none
+          p
+               text-decoration: none
+               color: $swines7
+
+
+.col-xl-10#searchpage
+     h1
+          font-weight: 300
+          text-align: center
+          font-size: 28px
+          margin: 25px 0px
+          b
+               font-weight: 700
+
+     a
+          color: $swines7
+          text-decoration: none
+
+
+.row#messages-row
+     > .col-md-3
+          ul.list-group
+               height: calc(100vh - 100px)
+               max-height: calc(100vh - 100px)
+               overflow: scroll
+               li.list-group-item
+                    a
+                         color: $swines7
+                         text-decoration: none
+                         height: 50px
+                         display: flex
+                         align-items: center
+                         img
+                              border-radius: 50%
+                              height: 50px
+                         h1
+                              color: #000
+                              font-weight: 500
+                              margin: 0
+                              font-size: 22px
+                              margin-left: 8px
+
+     > .col-md-8
